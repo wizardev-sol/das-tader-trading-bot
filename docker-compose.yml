@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  das-trader-bot:
+    build: .
+    container_name: das-trader-bot
+    env_file:
+      - .env
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    ports:
+      - "9306:9306"
+    volumes:
+      - ./config:/app/config
+      - ./store:/app/store
+      - ./log:/app/log
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"
+

@@ -1,0 +1,37 @@
+[project]
+name = "das-trader-bot"
+version = "0.1.0"
+description = "Professional DAS Trader trading bot with FIX protocol integration, scanner bots, order execution, short selling, and risk management."
+authors = [{ name = "DAS Trader Bot" }]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "quickfix>=2.0.0",
+    "pandas>=2.1.0",
+    "numpy>=1.24.0",
+    "pydantic>=2.8.2",
+    "pydantic-settings>=2.1.0",
+    "python-dotenv>=1.0.1",
+    "structlog>=24.1.0",
+    "prometheus-client>=0.20.0",
+    "aiohttp>=3.9.0",
+    "websockets>=12.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=24.3.0",
+    "ruff>=0.6.8",
+    "pytest>=8.3.2",
+    "pytest-asyncio>=0.23.8",
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I"]
+target-version = "py311"
+
