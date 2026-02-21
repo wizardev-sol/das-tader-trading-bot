@@ -3,17 +3,7 @@
 Production-grade **DAS Trader automated trading bot** with FIX protocol integration, real-time market scanning, order execution, short selling, and comprehensive risk management.  
 Built for professional traders seeking automated execution, opportunity detection, and intelligent position management on DAS Trader platform.
 
-<p>
-  <a href="mailto:xsui46941@gmail.com">
-    <img src="https://img.shields.io/badge/Email-xsui46941%40gmail.com-ef4444?style=flat&logo=gmail&logoColor=white" />
-  </a>
-  <a href="https://t.me/lorine93s">
-    <img src="https://img.shields.io/badge/Telegram-@lorine93s-2AABEE?style=flat&logo=telegram&logoColor=white" />
-  </a>
-  <a href="https://twitter.com/kakamajo_btc">
-    <img src="https://img.shields.io/badge/Twitter-@kakamajo__btc-1DA1F2?style=flat&logo=twitter&logoColor=white" />
-  </a>
-</p>
+Builder: [@vvizardev](https://t.me/vvizardev)
 
 ## What This Bot Does
 
@@ -143,7 +133,7 @@ Live market data feed processing:
 ### 2. Installation
 
 ```bash
-git clone https://github.com/your-org/das-trader-bot.git
+git clone https://github.com/wizardev-sol/das-trader-bot.git
 cd das-trader-bot
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
